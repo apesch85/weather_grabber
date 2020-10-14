@@ -12,7 +12,7 @@ service_account = os.getenv('robo_location')
 def GetStats():
     b_obj = BytesIO()
     crl = pycurl.Curl()
-    crl.setopt(crl.URL, "ftp://tgftp.nws.noaa.gov/data/observations/metar/decoded/KDTW.TXT")
+    crl.setopt(crl.URL, "ftp://tgftp.nws.noaa.gov/data/observations/metar/decoded/KGRR.TXT")
     crl.setopt(crl.WRITEDATA, b_obj)
     crl.perform()
     crl.close()
