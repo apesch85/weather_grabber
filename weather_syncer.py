@@ -9,7 +9,7 @@ import pycurl
 service_account = os.getenv('robo_location')
 
 
-def GetStats()
+def GetStats():
     b_obj = BytesIO()
     crl = pycurl.Curl()
     crl.setopt(crl.URL,
